@@ -17,7 +17,7 @@ st.set_page_config(
 @st.cache_resource
 def load_model():
     try:
-        with open("crop_model.pkl", "rb") as f:
+        with open("Notebook/crop_model.pkl", "rb") as f:
             return pickle.load(f)
     except Exception as e:
         st.error(f"Model Loading Error: {e}")
